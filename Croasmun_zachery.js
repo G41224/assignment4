@@ -87,17 +87,16 @@ var library = function (){
 	};
 		
 		
-		// next smallest array function
+		// next smallest array function 
 	var arrFunk = function(val, val2){
 		
 		var inPut = val;
 		var	inPut2 = val2;
 		var	numArr = [];
 		
-			for (var i=0; i < inPut.length; i++) {
+			for (var i=inPut2-1; i < inPut2; i++) {
 				
-		 	 	inPut[i]=indexOf(inPut2)+1
-		  	
+		 	 	
 		  			numArr.push(inPut[i]);
 		  	
 		  	
@@ -108,6 +107,17 @@ var library = function (){
 	};
 	
 	
+	var addArr = function(val){
+		var addThis = val
+		
+		for (var i=0; i<addThis.length; i++){
+			
+			
+		};
+		
+		
+		
+	};
 	
 	
 	return{
