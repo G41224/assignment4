@@ -90,17 +90,14 @@ var library = function (){
 		// next smallest array function 
 	var arrFunk = function(val, val2){
 		
-		var inPut = val;
-		var	inPut2 = val2;
-		var	numArr = [];
+		var inPut = val,
+			inPut2 = val2,
+			numArr = [];
 		
-			for (var i=inPut2-1; i < inPut2; i++) {
-				
-		 	 	
-		  			numArr.push(inPut[i]);
+			for (var i=inPut2-1; i < inPut2; i++){
+				 	
+		  		numArr.push(inPut[i]);
 		  	
-		  	
-		 	 
 			};
 		return numArr;
 		
@@ -120,13 +117,27 @@ var library = function (){
 	};
 	
 	
+	var changeSt = function(val){
+		var str = val;
+		
+		if (str === ""){
+			return number(str);
+			
+		};
+		return str;
+		
+	};
+	
+	
 	return{
 		"phoneNum":   phoneNum,
 		"emailCheck": emailCheck,
 		"urlCheck":   urlCheck,
-		"changeCap":    changeCap,
-		"arrFunk": arrFunk
-	}
+		"changeCap":  changeCap,
+		"arrFunk":    arrFunk,
+		"addArr": 	  addArr,
+		"changeSt":   changeSt
+	};
 
 	
 	
@@ -141,3 +152,4 @@ console.log(newLib.emailCheck("haha@gogor.com"))
 console.log(newLib.urlCheck("https://"))
 console.log(newLib.changeCap("hello everyone this is fun"))
 console.log(newLib.arrFunk([1,3,4,5,7,8,9], 5))
+console.log(newLib.changeSt("10"))
