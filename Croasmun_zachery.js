@@ -103,20 +103,24 @@ var library = function (){
 		
 	};
 	
-	
+	//add numbers from an array :i connot get this function to work any advice would be helpfull
 	var addArr = function(val){
-		var addThis = val
-		
-		for (var i=0; i<addThis.length; i++){
+		var addThis = val,
+			numLeft = [];
 			
+		for (var i=0; i < addThis.length; i++){
+			
+			if (addThis[i] === ""){
+				numLeft.push(addThis[i])
+			};
 			
 		};
 		
 		
-		
+		return addThis;
 	};
 	
-	
+	// change string to number I'm not sure if this is working correctly
 	var changeSt = function(val){
 		var str = val;
 		
@@ -127,8 +131,48 @@ var library = function (){
 		return str;
 		
 	};
+	// get days between dates function
+	var getDays = function(val1,val2){
+		var date1 = val1,
+			date2 = val2;
 	
 	
+	
+	return ;	
+	};
+	
+	// fuzzy match number
+	var matchNum = function(val){
+		match = val;
+		
+		
+		
+		
+		return match;
+		
+	};
+	
+	// decimal point change
+	
+	var changePoint = function(val){
+		
+		
+		
+		
+		return val;
+	};
+	
+	//short an array
+	
+	var shortObj = function(val){
+		
+		
+		
+		return val;
+	};
+	
+	
+
 	return{
 		"phoneNum":   phoneNum,
 		"emailCheck": emailCheck,
@@ -136,7 +180,11 @@ var library = function (){
 		"changeCap":  changeCap,
 		"arrFunk":    arrFunk,
 		"addArr": 	  addArr,
-		"changeSt":   changeSt
+		"changeSt":   changeSt,
+		"getDays":    getDays,
+		"matchNum":   matchNum,
+		"changePoint":changePoint,
+		"shortObj":   shortObj
 	};
 
 	
@@ -152,4 +200,6 @@ console.log(newLib.emailCheck("haha@gogor.com"))
 console.log(newLib.urlCheck("https://"))
 console.log(newLib.changeCap("hello everyone this is fun"))
 console.log(newLib.arrFunk([1,3,4,5,7,8,9], 5))
+console.log(newLib.addArr([1,25,3,"10","eight",4]))
 console.log(newLib.changeSt("10"))
+
